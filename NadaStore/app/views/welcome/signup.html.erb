@@ -1,0 +1,28 @@
+<%= form_for :user, url: user_create_path do |f| %> <!--"http://localhost:3030/users"-->
+  <p>
+    <%= f.label :firstname %><br>
+    <%= f.text_field :firstname %>
+  </p>
+ 
+  <p>
+    <%= f.label :lastname %><br>
+    <%= f.text_field :lastname %>
+  </p>
+  <p>
+    <%= f.label :username %><br>
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :password %><br>
+    <%= f.text_field :password %>
+  </p>
+  <p>
+    <%= f.submit "Signup"%>
+  </p>
+<% end %>
+</br>
+<%= link_to 'back', welcome_index_path%>

@@ -1,0 +1,17 @@
+<%= form_for :user, url: user_login_path do |f| %>
+  <p>
+    <%= f.label :username %><br>
+    <%= f.text_field :username %>
+  </p>
+ 
+  <p>
+    <%= f.label :password %><br>
+    <%= f.text_field :password %>
+  </p>
+ 
+  <p>
+    <%= f.submit "Login"%>
+  </p>
+<% end %>
+</br>
+<%= link_to 'back', welcome_index_path%>
